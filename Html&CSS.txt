@@ -1,0 +1,54 @@
+//inline CSS
+
+<span style="background-color:black; color:White; border-radius:05px;  padding:5px; font-size:20px;">SHARING</span>
+<br><br>
+
+// Accords Radius
+
+.accords .elementor-tab-title {
+  border-radius: 25px;
+}
+.elementor-tab-content.elementor-clearfix {
+  margin-top: 8px;
+  border-radius: 25px;
+}
+
+// Client Email
+
+<p>Hi [field id="name"]</p>
+<p>Thank you for reaching out to us! We have received your [field id="tripname"] query. Our team aims to respond to all queries promptly, typically within 24 - 48 hours. In the meantime, if you have any additional information to add or further questions, please feel free to reply to this email.
+We appreciate your patience and are interested in helping you. We look forward to assisting you further.</p>
+<br><br>
+<p>Best regards,</p>
+<p>Airwings Travel & Tours </p>
+<p>https://airwingspk.com/</p>
+<p>Phone No:+92-21-35633383-84</p>
+<p>Mobile No: +92-031-8505060</p>
+
+//image change a/c to accords
+<script>
+    jQuery(function() {
+const img = "https://zexussolution.com/wp-content/uploads/2024/07/storytelling-and-engagement.jpg";
+  jQuery("#elementor-tab-title-9601").click(function(){
+    jQuery(".toggle-img2 img").attr('srcset',img);
+     jQuery(".toggle-img2 img").attr('src',img);
+  });
+});
+	
+	 jQuery(function() {
+const img = "https://zexussolution.com/wp-content/uploads/2024/07/Creative-flexibility.jpg";
+  jQuery("#elementor-tab-title-9602").click(function(){
+    jQuery(".toggle-img2 img").attr('srcset',img);
+     jQuery(".toggle-img2 img").attr('src',img);
+  });
+});
+	
+	 jQuery(function() {
+const img = "https://zexussolution.com/wp-content/uploads/2024/07/Boosting-Marketing.jpg";
+  jQuery("#elementor-tab-title-9603").click(function(){
+    jQuery(".toggle-img2 img").attr('srcset',img);
+     jQuery(".toggle-img2 img").attr('src',img);
+  });
+});
+</script>
+
