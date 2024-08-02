@@ -2,7 +2,7 @@
 
 <span style="background-color:black; color:White; border-radius:05px;  padding:5px; font-size:20px;">SHARING</span>
 <br><br>
-
+-----------------------------------------------------------------------------------------
 // Accords Radius
 
 .accords .elementor-tab-title {
@@ -12,7 +12,7 @@
   margin-top: 8px;
   border-radius: 25px;
 }
-
+-------------------------------------------------------------------------------------------
 // Client Email
 
 <p>Hi [field id="name"]</p>
@@ -24,7 +24,7 @@ We appreciate your patience and are interested in helping you. We look forward t
 <p>https://airwingspk.com/</p>
 <p>Phone No:+92-21-35633383-84</p>
 <p>Mobile No: +92-031-8505060</p>
-
+----------------------------------------------------------------------------------------------
 //image change a/c to accords
 <script>
     jQuery(function() {
@@ -51,4 +51,19 @@ const img = "https://zexussolution.com/wp-content/uploads/2024/07/Boosting-Marke
   });
 });
 </script>
+---------------------------------------------------------------------------------------
+//To change add to cart text on single product page
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'webrpoint_button' );
+function webrpoint_button() {
+    return __( 'Buy Now', 'woocommerce' );
+}
+// To change add to cart text on product archives(Collection) page
+add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text' );
+function woocommerce_custom_product_add_to_cart_text() {
+    return __( 'Buy Now', 'woocommerce' );
+
+Implemetion process:
+Note: when ever in single page add to cart button text change use this code .
+Steps : go to appearance file manage select theme functions file than go bottom and paste this code after update
+--------------------------------------------------------------------------------------------
 
